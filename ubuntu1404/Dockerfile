@@ -21,7 +21,7 @@ RUN \
   touch /home/ubuntu/.Xauthority && \
   update-locale
 
-COPY ubuntu1404/docker-entrypoint.sh /
+COPY docker-entrypoint.sh /
 CMD ["/docker-entrypoint.sh"]
 
 EXPOSE 22
