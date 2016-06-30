@@ -6,7 +6,7 @@ Essentially this is a test-friendly SSH server with an "Ubuntu" user and other o
 
 Example Usage:
 ```
-docker run -d -p 2222:22 --name ansible_test -v ~/.ssh/id_rsa.pub:/home/ubuntu/.ssh/authorized_keys philm/ansible_target:ubuntu1404
+docker run -d -p 2222:22 --name ansible_test -v ~/.ssh/id_rsa.pub:/home/ubuntu/.ssh/authorized_keys philm/ansible_target:latest
 ```
 
 Note: certain privileged operations might not work without [additional configuration](https://docs.docker.com/engine/reference/commandline/run/#full-container-capabilities-privileged).
