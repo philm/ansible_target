@@ -7,6 +7,8 @@ RUN \
     sudo \
     locales \
     tzdata \
+    rsyslog \
+    python \
     && \
   rm -fr /var/lib/apt/lists/*
 
